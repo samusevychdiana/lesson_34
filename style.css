@@ -1,0 +1,49 @@
+body {
+    margin: 0;
+}
+
+.grid-layout {
+    display: grid;
+    grid-template-columns: 800px 1fr;
+    grid-template-rows: 200px 1fr 200px;
+    grid-template-areas: 
+        "header header"
+        "sidebar main"
+        "footer footer";
+}
+
+.header {
+    grid-area: header;
+    background-color: green;
+    color: white;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: gainsboro;
+    color: black;
+}
+
+.main {
+    grid-area: main;
+    background-color: lightslategrey;
+    color: black;
+}
+
+.grid-cards {
+    gap: 20px;
+}
+
+.card {
+    padding: 15px 25px 15px 25px;
+    background-color: cornflowerblue;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: darkgrey;
+    color: white;
+}
